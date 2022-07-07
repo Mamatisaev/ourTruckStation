@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "model": "Renault Maguum",
+    "driver": {
+      "id": 1,
+      "name": "Jaulanbek"
+    },
+    "state": "BASE"
+  },
+  {
+    "id": 2,
+    "model": "Volvo",
+    "driver": {
+      "id": 2,
+      "name": "Nurmuhammad"
+    },
+    "state": "BASE"
+  },
+  {
+    "id": 3,
+    "model": "Dav XT",
+    "driver": {
+      "id": 3,
+      "name": "Dastan"
+    },
+    "state": "BASE"
+  }
+]
