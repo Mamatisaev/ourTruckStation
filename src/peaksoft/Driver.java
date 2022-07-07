@@ -1,6 +1,6 @@
 package peaksoft;
 
-public class Driver {
+public class Driver implements Driverable {
     private String id;
     private String name;
 
@@ -31,5 +31,23 @@ public class Driver {
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    public void changeDriver() {
+        System.out.println("");
+
+    }
+
+    @Override
+    public void startDriving() {
+        System.out.println("");
+
+    }
+
+    @Override
+    public void startRepair() {
+        System.out.println("");
+
     }
 }
