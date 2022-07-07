@@ -48,4 +48,13 @@ public class Truck {
     public void setState(State state) {
         this.state = state;
     }
+
+    public static Truck getTruckMethod(int id,String model,Driver driver,State state){
+        Truck truck = new Truck();
+        truck.id = id;
+        truck.model = model;
+        truck.driver = driver;
+        truck.state = state;
+        return truck;
+    }
 }
