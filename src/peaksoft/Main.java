@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -19,17 +20,21 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("This is the group.");
 
+        Driver[] driver = {
+                new Driver(1,"Jaulanbek"),
+                new Driver(2,"Nurmuhammad"),
+                new Driver(3,"Dastan")
+        };
+
         Truck[] trucks = {
-                new Truck(1,"Renault Maguum",new Driver("driver-1","Jaulanbek"),State.ON_BASE),
-                new Truck(2,"Volvo",new Driver("driver-2","Nurmuhammad"),State.ON_BASE),
-                new Truck(3,"Dav XT",new Driver("driver-3","Dastan"),State.ON_BASE)
+                new Truck(1,"Renault Maguum",new Driver(1,"Jaulanbek"),State.BASE),
+                new Truck(2,"Volvo",new Driver(2,"Nurmuhammad"),State.BASE),
+                new Truck(3,"Dav XT",new Driver(3,"Dastan"),State.BASE)
         };
 
         String json = GSON.toJson(trucks);
         writeMethod(json);
         readerMethod(json);
-
-
 
 
     }
@@ -52,4 +57,7 @@ public class Main {
             e.getMessage();
         }
     }
+//    private static void writeDriverMethod(String word){
+//        try(FileWriter fileWriter = new FileWriter())
+//    }
 }
